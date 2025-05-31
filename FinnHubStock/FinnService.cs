@@ -23,8 +23,6 @@ namespace FinnHubStock
 
         }
 
-
-
         public async Task<Dictionary<string, object>> GetAllData(string stockName)
         {
             var stockInfo = new Dictionary<string, object>();
