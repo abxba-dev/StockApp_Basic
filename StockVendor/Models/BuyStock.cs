@@ -7,8 +7,8 @@
     }
     public class BorrowMoney
     {
-        public double Wallet { get; private set; } = 10;//Current money holding
-        public double Bank { get; private set; } = 100;//Borrow money from bank
+        public double Wallet { get;  set; } = 10;//Current money holding
+        public double Bank { get;  set; } = 2000;//Borrow money from bank
     }
 }
 

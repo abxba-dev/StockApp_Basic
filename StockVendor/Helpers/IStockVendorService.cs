@@ -6,9 +6,11 @@ namespace StockVendor.Helpers
     {
         List<BuyStock> GetAllStockHolding();
 
-        List<BuyStock> BuyStocks(string stockName, int stockNumber);
+        Task<List<BuyStock>> BuyStocks(string stockName, int stockNumber);
 
         List<BorrowMoney> BorrowMoneyFromBank(int borrow);
+
+        List<BorrowMoney> GetMoneyStatus();
 
     }
 }
