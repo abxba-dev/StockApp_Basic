@@ -1,0 +1,11 @@
+﻿@model Dictionary<string,object>
+
+<h2>Stock Data</h2>
+
+
+<ul>
+    @foreach (var kvp in Model)
+    {
+        <li>@kvp.Key: @kvp.Value:</li>
+    }
+</ul>
