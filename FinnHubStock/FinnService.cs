@@ -101,6 +101,8 @@ namespace FinnHubStock
         public async Task<GetStockInfo?> FetchStockInfoAsync(string stockName)
         {
             string json = await GetRawDataAsync(stockName);
+            
+            
             if (string.IsNullOrWhiteSpace(json)) return null;
             try
             {
